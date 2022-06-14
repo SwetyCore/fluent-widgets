@@ -4,16 +4,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 VisualStudioVersion = 16.0.32428.217
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainFramework", "MainFramework.csproj", "{FCAD684F-825F-45F2-B3B7-6FA3E9E68ED1}"
+	ProjectSection(ProjectDependencies) = postProject
+		{04F3ED87-AF3E-4736-A5A3-2FF087999745} = {04F3ED87-AF3E-4736-A5A3-2FF087999745}
+	EndProjectSection
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DefaultWidgets", "Plugins\DefaultWidgets\DefaultWidgets.csproj", "{2BD1688E-EABA-4AE6-B392-C8E102E2FA23}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PluginExample", "Plugins\PluginExample\PluginExample.csproj", "{2C0EC2C5-4023-4208-816D-7AD90EC8A0EF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MonitStyle", "Plugins\MonitStyle\MonitStyle\MonitStyle.csproj", "{B5478506-29B0-4386-B519-917C274D0747}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PublicLibrary", "PublicLibrary\PublicLibrary\PublicLibrary.csproj", "{5C792DED-863D-44CC-9D7A-728E9E413764}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Plugins", "Plugins", "{7ACC5B71-46B8-407E-BCA1-124B21A58E6F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonitStyle", "Plugins\MonitStyle\MonitStyle.csproj", "{C6EC83A2-409F-4B54-B5D6-00C26D21A9A1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PublicLibrary", "PublicLibrary\PublicLibrary.csproj", "{04F3ED87-AF3E-4736-A5A3-2FF087999745}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,14 +36,14 @@ Global
 		{2C0EC2C5-4023-4208-816D-7AD90EC8A0EF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2C0EC2C5-4023-4208-816D-7AD90EC8A0EF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2C0EC2C5-4023-4208-816D-7AD90EC8A0EF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B5478506-29B0-4386-B519-917C274D0747}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B5478506-29B0-4386-B519-917C274D0747}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B5478506-29B0-4386-B519-917C274D0747}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B5478506-29B0-4386-B519-917C274D0747}.Release|Any CPU.Build.0 = Release|Any CPU
-		{5C792DED-863D-44CC-9D7A-728E9E413764}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{5C792DED-863D-44CC-9D7A-728E9E413764}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{5C792DED-863D-44CC-9D7A-728E9E413764}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{5C792DED-863D-44CC-9D7A-728E9E413764}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6EC83A2-409F-4B54-B5D6-00C26D21A9A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6EC83A2-409F-4B54-B5D6-00C26D21A9A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6EC83A2-409F-4B54-B5D6-00C26D21A9A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6EC83A2-409F-4B54-B5D6-00C26D21A9A1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{04F3ED87-AF3E-4736-A5A3-2FF087999745}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{04F3ED87-AF3E-4736-A5A3-2FF087999745}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{04F3ED87-AF3E-4736-A5A3-2FF087999745}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{04F3ED87-AF3E-4736-A5A3-2FF087999745}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -48,7 +51,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{2BD1688E-EABA-4AE6-B392-C8E102E2FA23} = {7ACC5B71-46B8-407E-BCA1-124B21A58E6F}
 		{2C0EC2C5-4023-4208-816D-7AD90EC8A0EF} = {7ACC5B71-46B8-407E-BCA1-124B21A58E6F}
-		{B5478506-29B0-4386-B519-917C274D0747} = {7ACC5B71-46B8-407E-BCA1-124B21A58E6F}
+		{C6EC83A2-409F-4B54-B5D6-00C26D21A9A1} = {7ACC5B71-46B8-407E-BCA1-124B21A58E6F}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {8A377D25-FAAB-4474-AAEF-A0DD3CB7469A}
