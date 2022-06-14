@@ -19,9 +19,13 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Controls\**" />
     <Compile Remove="Plugins\**" />
+    <EmbeddedResource Remove="Controls\**" />
     <EmbeddedResource Remove="Plugins\**" />
+    <None Remove="Controls\**" />
     <None Remove="Plugins\**" />
+    <Page Remove="Controls\**" />
     <Page Remove="Plugins\**" />
   </ItemGroup>
 
@@ -84,7 +88,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controls\" />
     <Folder Include="Utils\" />
   </ItemGroup>
 

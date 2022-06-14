@@ -9,7 +9,7 @@
       
       Title="About">
 
-    <ScrollViewer Margin="0" VerticalScrollBarVisibility="Auto">
+    <!--<ScrollViewer Margin="0" VerticalScrollBarVisibility="Auto">-->
         <ListView BorderThickness="0" Background="Transparent">
             <ListView.Resources>
                 <!-- 重写ListViewItem样式-->
@@ -107,5 +107,5 @@
             </StackPanel>
 
             </ListView>
-    </ScrollViewer>
+    <!--</ScrollViewer>-->
 </Page>

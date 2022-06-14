@@ -1,11 +1,11 @@
 using System;
 using static MyNewApp.Common.PluginBase;
 
-namespace PluginExample
+namespace MonitStyle
 {
         public class PluginInfo : IPlugin
         {
-            public string Name => "示例插件";
+            public string Name => "MonitStyle";
             public string Description => "示例插件介绍";
             public string Author => "作者";
         }

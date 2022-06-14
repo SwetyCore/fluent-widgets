@@ -28,9 +28,11 @@
                       SelectionChanged="ComboBox_SelectionChanged"
                       />
         </StackPanel>
-        <ScrollViewer Grid.Row="1" Margin="0" VerticalScrollBarVisibility="Auto">
-            <ListView x:Name="wiLV" BorderThickness="0"   
-                      Background="Transparent">
+        <!--<ScrollViewer Grid.Row="1" Margin="0" VerticalScrollBarVisibility="Auto"  PanningMode="None"
+                      ManipulationBoundaryFeedback="ScrollViewer_ManipulationBoundaryFeedback">-->
+        <ListView Grid.Row="1" Margin="0"
+                x:Name="wiLV" BorderThickness="0"   
+                      Background="Transparent" ScrollViewer.CanContentScroll="False">
                 <ListView.Resources>
                     <!-- 重写ListViewItem样式-->
                     <Style TargetType="{x:Type ListViewItem}">
@@ -54,7 +56,7 @@
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
-        </ScrollViewer>
+        <!--</ScrollViewer>-->
 
     </Grid>
 </Page>

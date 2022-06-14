@@ -2,7 +2,19 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
+    <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
+    <GenerateTargetFrameworkAttribute>false</GenerateTargetFrameworkAttribute>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\MainFramework.csproj" />
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <!--将生成的主程序集复制到Plugins文件夹内-->
+    <Exec Command="mkdir &quot;$(SolutionDir)bin\Debug\net5.0-windows\Plugins&quot;&#xD;&#xA;xcopy &quot;$(TargetPath)&quot; &quot;$(SolutionDir)bin\Debug\net5.0-windows\Plugins&quot; /y" />
+  </Target>
 
 </Project>

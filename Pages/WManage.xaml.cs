@@ -49,6 +49,12 @@ namespace MyNewApp.Pages
             wiLV.ItemsSource = widgetInstances;
 
         }
+
+        private void ScrollViewer_ManipulationBoundaryFeedback(object sender, ManipulationBoundaryFeedbackEventArgs e)
+        {
+            e.Handled = true;
+
+        }
     }
 
     public static class WidgetsList

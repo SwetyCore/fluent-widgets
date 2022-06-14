@@ -14,7 +14,7 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
-namespace PluginExample.Widgets
+namespace MonitStyle.Widgets
 {
     /// <summary>
     /// ExampleWIdget.xaml 的交互逻辑
