@@ -78,7 +78,7 @@
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
     <PackageReference Include="SharpVectors" Version="1.7.7" />
     <PackageReference Include="System.Management" Version="6.0.0" />
-    <PackageReference Include="WPF-UI" Version="1.2.4" />
+    <PackageReference Include="WPF-UI" Version="1.2.7" />
   </ItemGroup>
 
   <ItemGroup>
