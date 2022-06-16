@@ -10,6 +10,10 @@
     <UserControl.Resources>
         <convertor:Str2IntConvertor x:Key="Str2IntConvertor"/>
         <convertor:WeatherIconConvertor x:Key="WeatherIconConvertor"/>
+
+        <Style TargetType="TextBlock">
+            <Setter Property="Foreground" Value="{DynamicResource TextFillColorPrimaryBrush}"/>
+        </Style>
     </UserControl.Resources>
     <!--<UserControl.Resources>
         <ResourceDictionary>
